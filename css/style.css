@@ -1,0 +1,42 @@
+@import "reset.css";
+
+body {
+  background-color: violet;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 1150px;
+  margin: 0 200px;
+}
+
+.screen-header {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  align-items: center;
+}
+
+.screen-header__left {
+  display: flex;
+  align-items: center;
+}
+.screen-header__left span {
+  margin-right: 30px;
+}
+.screen-header__right {
+  display: flex;
+  align-items: center;
+}
+.screen-header__right .screen-header__package {
+  height: 60px;
+  background-color: khaki;
+}
+.screen-header__right span {
+  margin-left: 10px;
+  font-size: 10px;
+}
