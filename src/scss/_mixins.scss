@@ -1,0 +1,28 @@
+$minPhone: 150px;
+$maxPhone: 560px;
+$minSmall: $maxPhone + 1;
+$maxSmall: 780px;
+$minMiddle: $maxSmall + 1;
+$maxMiddle: 980px;
+$minWide: $maxMiddle + 1;
+$maxWide: 2000px;
+
+@mixin mediasize($size) {
+  @if $size == "wide" {
+    @media screen and (min-width: $minWide) and (max-width: $maxWide) {
+      @content;
+    }
+  } @else if $size == "middle" {
+    @media screen and (min-width: $minMiddle) and (max-width: $maxMiddle) {
+      @content;
+    }
+  } @else if $size == "small" {
+    @media screen and (min-width: $minSmall) and (max-width: $maxSmall) {
+      @content;
+    }
+  } @else if $size == "phone" {
+    @media screen and (min-width: $minPhone) and (max-width: $maxPhone) {
+      @content;
+    }
+  }
+}

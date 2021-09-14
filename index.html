@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,101 +10,71 @@
   </head>
 
   <body>
-    <main>
-      <header class="screen-header">
-        <div class="screen-header__culumn">
-          <div class="screen-header__left">
-            <span class="screen-header__home">
-              <a href="#"
-                ><img src="https://www.hancom.com/img/renew/logo_new.png"
-              /></a>
-            </span>
-            <span class="screen-header__service"><a href="#">제품</a></span
-            ><span class="screen-header__service"><a href="#">구매</a></span
-            ><span class="screen-header__service"
-              ><a href="#">고객지원</a></span
+    <div id="frame">
+      <main>
+        <div class="banner-img">
+          <img src="src/scss/img1/img1.jpg" alt="" />
+          <div class="opacity"></div>
+        </div>
+        <header class="header">
+          <div class="header__services">
+            <a class="header__service" id="home" href="#"
+              ><img src="https://www.hancom.com/img/renew/logo_new.png" alt=""
+            /></a>
+            <a class="header__service" href="#">제품</a>
+            <a class="header__service" href="#">구매</a>
+            <a class="header__service" href="#">고객지원</a>
+          </div>
+          <div class="header__account">
+            <a href="#" class="header__account-item">로그인</a
+            ><span class="bar">|</span
+            ><a href="#" class="header__account-item">회원가입</a
+            ><span class="bar">|</span
+            ><a href="#" class="header__account-item">주문/배송</a
+            ><span class="bar">|</span
+            ><a href="#" class="header__account-item">장바구니</a
+            ><span class="bar">|</span
+            ><a href="#" class="header__account-item">H & Friends</a
+            ><a href="#" id="officeProduct"
+              ><span>한컴오피스</span> <span>2020</span></a
             >
           </div>
-        </div>
+        </header>
 
-        <div class="screen-header__culumn">
-          <div class="screen-header__right">
-            <span><a href="#">로그인</a></span>
-            <span>|</span>
-            <span><a href="#">회원가입</a></span>
-            <span>|</span>
-            <span><a href="#">주문/배송</a></span>
-            <span>|</span>
-            <span><a href="#">장바구니</a></span>
-            <span>|</span>
-            <span><a href="#">H&Friends</a></span>
-            <a class="screen-header__package" href="#"
-              ><span> 한컴오피스 </span><span>2020</span></a
-            >
-          </div>
-        </div>
-      </header>
-
-      <div class="show-box">
-        <div class="show-box__text">
-          <div class="show-box__title">
-            <img
-              src="https://www.hancom.com/img/main/bg_visual_tit.png?v=20200612"
-            />
-          </div>
-          <div class="show-box__subtitle">
+        <div class="product-office">
+          <div class="product-office__title">한컴오피스 2020</div>
+          <div class="product-office__subTitle">
             스마트한 선택! 음성인식 기능으로 문서를 작성할 수 있습니다.
           </div>
-          <div class="show-box__link">
-            <div class="show-box__link-item">
-              <a href="#"><span>제품 소개</span
-              ><span><i class="fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="show-box__link-item">
-              <a href="#"><span>체험판 다운로드</span
-              ><span><i class="fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="show-box__link-item">
-              <a href="#"><span>바로구매</span
-              ><span><i class="fas fa-chevron-right"></i></a></span>
-            </div>
+          <div class="product-office__links">
+            <a href="#" class="product-office__link"
+              ><span>제품 소개</span> <i class="fas fa-chevron-right"></i
+            ></a>
+            <a href="#" class="product-office__link"
+              ><span>체험판 다운로드</span> <i class="fas fa-chevron-right"></i
+            ></a>
+            <a href="#" class="product-office__link"
+              ><span>바로구매</span><i class="fas fa-chevron-right"></i
+            ></a>
           </div>
         </div>
-
-        <div class="show-box__control">
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
-            <span>
-                <i class="fas fa-circle"></i>
-            </span>
+        <div class="control-circles">
+          <span></span><span></span><span></span><span></span><span></span
+          ><span></span>
         </div>
 
-        <div class="show-box__update-neo">
-            <div class="show-box__update-box">
-                <div class="show-box__update-culumn"></div>
-                <div class="show-box__update-culumn">
-                    <a href="#">제품등록</a>
-                </div>
+        <div class="update">
+          <div class="update__box">
+            <div class="update__column">
+              <span class="update__text">한컴오피스 NEO 최신 업데이트</span
+              ><span class="update__text">2021-08-18</span
+              ><span class="update__bar">|</span>
             </div>
+            <div class="update__column">제품등록</div>
+          </div>
         </div>
-
-        <img class="show-box__background-img" src="img/img1.jpg" />
-      </div>
-    </main>
-
+      </main>
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
