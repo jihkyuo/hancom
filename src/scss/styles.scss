@@ -75,7 +75,6 @@ main {
         opacity: 0.9;
         &:hover {
           text-decoration: underline;
-          // border-bottom: 0.5px solid #000;
         }
       }
       .bar {
@@ -168,7 +167,7 @@ main {
       .update__column {
         cursor: pointer;
         &:hover {
-          color: #0a56a9;
+          color: $blue;
         }
         &:first-child {
           display: flex;
@@ -176,7 +175,7 @@ main {
           span {
             margin-left: 10px;
             &:nth-child(2) {
-              color: #0a56a9;
+              color: $blue;
             }
           }
 
@@ -190,6 +189,23 @@ main {
         &:last-child {
           margin-right: 80px;
         }
+      }
+    }
+  }
+  nav {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 200;
+    .nav__icons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &:hover {
+        color: $blue;
+      }
+      .nav__text {
+        margin-top: 15px;
       }
     }
   }
