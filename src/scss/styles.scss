@@ -16,9 +16,10 @@ body {
 
 .banner-img {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 1px;
   z-index: -1;
+
   img {
     width: end;
     height: 550px;
@@ -310,9 +311,9 @@ main {
     position: relative;
     .footer__bc {
       position: absolute;
-      left: -1000px;
+      left: -200px;
       z-index: -1;
-      width: 250%;
+      width: 133%;
       height: 100%;
       background-color: #494949;
     }
