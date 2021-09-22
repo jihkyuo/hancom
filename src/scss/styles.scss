@@ -312,82 +312,75 @@ main {
       }
     }
   }
-  footer {
-    margin-top: 60px;
-    height: 355px;
+}
+footer {
+  margin-top: 200px;
+  background-color: #494949;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .footer__bc--gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    background-color: #494949;
+    height: 3px;
+    background: linear-gradient(
+      0.25turn,
+      #00a3e6 10%,
+      #6456b1 50%,
+      #e7823f 70%
+    );
+  }
+  .footer__header {
+    margin-top: 45px;
     display: flex;
-    position: relative;
-    .footer__bc {
-      position: absolute;
-      left: -200px;
-      z-index: -1;
-      width: 133%;
-      height: 100%;
-      background-color: #494949;
-    }
-    .footer__bc--gradient {
-      top: -4px;
-      background: linear-gradient(
-        0.25turn,
-        #00a3e6 10%,
-        #6456b1 50%,
-        #e7823f 70%
-      );
-      z-index: -3;
-    }
-    .footer__header {
-      margin-top: 45px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    .footer__header-column {
       display: flex;
-      letter-spacing: -2px;
-      font-size: 14px;
-      .footer__header-column {
-        display: flex;
-        flex-direction: column;
-        margin-right: 20px;
-        &:first-child {
-          color: white;
-        }
+      flex-direction: column;
+      margin-right: 20px;
+      &:first-child {
+        color: white;
+      }
+      span {
+        margin-bottom: 15px;
+      }
+      .footer__header-items {
+        margin-bottom: 15px;
+        color: rgba(253, 253, 253, 0.6);
         span {
-          margin-bottom: 15px;
-        }
-        .footer__header-items {
-          margin-bottom: 15px;
-          color: rgba(253, 253, 253, 0.6);
-          span {
-            margin-right: 20px;
-            cursor: pointer;
-            &:hover {
-              text-decoration: underline;
-            }
+          margin-right: 20px;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
     }
-    .footer__policy {
-      margin-top: 40px;
-      letter-spacing: -2px;
-      font-weight: 600;
+  }
+  .footer__policy {
+    margin-top: 40px;
+    letter-spacing: -2px;
+    font-weight: 600;
 
-      span:first-child {
-        color: #00a3e6;
-        margin-right: 20px;
-        cursor: pointer;
-        &:hover {
-          color: #89ebff;
-        }
+    span:first-child {
+      color: #00a3e6;
+      margin-right: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #89ebff;
       }
-      span:last-child {
-        color: rgba(253, 253, 253, 0.7);
-        cursor: pointer;
-        &:hover {
-          color: white;
-        }
+    }
+    span:last-child {
+      color: rgba(253, 253, 253, 0.7);
+      cursor: pointer;
+      &:hover {
+        color: white;
       }
     }
   }
-
   .footer__companyInfo {
     margin-top: 17px;
     font-size: 13px;
