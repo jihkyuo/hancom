@@ -1,3 +1,21 @@
+@-webkit-keyframes modalAny {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes modalAny {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 a,
 abbr,
 acronym,
@@ -317,10 +335,13 @@ main nav {
   justify-content: space-around;
   font-weight: 200;
 }
+.modal,
 main nav .nav__icons {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+}
+main nav .nav__icons {
   cursor: pointer;
 }
 main nav .nav__icons .nav__text {
@@ -426,6 +447,38 @@ main .board .board__contents .board__content {
 footer .footer__header .footer__header-column .footer__header-items span:hover,
 main .board .board__contents .board__content:hover {
   text-decoration: underline;
+}
+.modal {
+  font-size: 30px;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 20px;
+  transition: all 1s ease-in-out;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.modal:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.modal div:not(:nth-child(2)) {
+  cursor: pointer;
+}
+.modal__opacity {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+  z-index: 50;
 }
 .hidden {
   -webkit-animation: modalAny 0.3s ease-in-out forwards;
