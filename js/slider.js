@@ -41,21 +41,21 @@ function paintBtn() {
 }
 paintBtn();
 let moveNum = "";
-autoSlide(moveNum);
-function autoSlide(moveNum) {
-  setInterval((moveNum) => {
-    moveNum -= 100;
-    bannerBox.style.transform = `translate(${moveNum}vw)`;
-    paintBtn();
-    console.log(moveNum);
-    if (moveNum === -300) {
-      moveNum = "";
-      bannerBox.style.transform = "";
-      paintBtn();
-      console.log("reset", moveNum);
-    }
-  }, 2000);
-}
+// autoSlide(moveNum);
+// function autoSlide(moveNum) {
+//   setInterval((moveNum) => {
+//     moveNum -= 100;
+//     bannerBox.style.transform = `translate(${moveNum}vw)`;
+//     paintBtn();
+//     console.log(moveNum);
+//     if (moveNum === -300) {
+//       moveNum = "";
+//       bannerBox.style.transform = "";
+//       paintBtn();
+//       console.log("reset", moveNum);
+//     }
+//   }, 2000);
+// }
 
 btn1.addEventListener("click", onclickBtn1);
 btn2.addEventListener("click", onclickBtn2);
